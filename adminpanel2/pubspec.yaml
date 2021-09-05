@@ -1,0 +1,38 @@
+name: adminpanel2
+description: A new Flutter project.
+
+publish_to: "none" # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.2
+  lottie: ^1.0.1
+  form_field_validator: ^1.1.0
+  firebase_core: ^1.1.1
+  cloud_firestore: ^2.1.0
+  firebase_auth: ^1.1.4
+  firebase: ^9.0.1
+  firebase_storage: ^8.1.0
+  ars_dialog: ^1.0.8
+  flutter_admin_scaffold: ^1.0.0
+  chips_choice: ^2.0.1
+  flutter_html: ^2.0.0
+  flutter_switch: ^0.3.2
+  getwidget: ^2.0.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/PlantAnimation.json
