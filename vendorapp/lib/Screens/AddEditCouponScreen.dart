@@ -179,10 +179,12 @@ class _AddEditCouponState extends State<AddEditCoupon> {
                               titleText.clear();
                               discountText.clear();
                               detailsText.clear();
+                              dateText.clear();
                               _active = false;
                             });
                             EasyLoading.showSuccess(
                                 'Saved coupon successfully');
+                            Navigator.pop(context);
                           });
                         }
                       },

@@ -8,6 +8,7 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_easyloading/flutter_easyloading.dart';
 import 'package:provider/provider.dart';
+import 'package:deliveryboy/Constants.dart';
 
 void main() async {
   Provider.debugCheckInvalidValueType = null;
@@ -33,7 +34,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Delivery App',
       theme: ThemeData(
-        primarySwatch: Colors.orange,
+        primaryColor: greenColor,
       ),
       builder: EasyLoading.init(),
       initialRoute: SplashScreen.id,

@@ -70,7 +70,7 @@ class FirebaseServices {
   }) {
     if (document == null) {
       return coupons.doc(title).set({
-        'title': title,
+        'title': title.toString().toUpperCase(),
         'discountRate': discountRate,
         'expiry': expiry,
         'details': details,

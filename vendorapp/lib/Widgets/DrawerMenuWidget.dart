@@ -85,8 +85,8 @@ class _MenuWidgetState extends State<MenuWidget> {
           sliderItem('Banner', CupertinoIcons.photo_on_rectangle),
           sliderItem('Coupons', CupertinoIcons.gift),
           sliderItem('Orders', Icons.list_alt_outlined),
-          sliderItem('Reports', Icons.stacked_bar_chart),
-          sliderItem('Setting', Icons.settings_outlined),
+          // sliderItem('Reports', Icons.stacked_bar_chart),
+          // sliderItem('Setting', Icons.settings_outlined),
           InkWell(
             child: Container(
               decoration: BoxDecoration(

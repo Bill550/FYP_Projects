@@ -1,5 +1,6 @@
 import 'package:chips_choice/chips_choice.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:deliveryboy/Screens/LoginScreen.dart';
 import 'package:deliveryboy/Services/FirebaseServices.dart';
 import 'package:deliveryboy/Widgets/OrderSummeryCard.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -31,6 +32,15 @@ class _HomeScreenState extends State<HomeScreen> {
     return Scaffold(
       backgroundColor: Theme.of(context).primaryColor.withOpacity(.2),
       appBar: AppBar(
+        iconTheme: IconThemeData(color: Colors.white),
+        leading: IconButton(
+          icon: Icon(Icons.power_settings_new_outlined),
+          onPressed: () async {
+            await FirebaseAuth.instance.signOut().then((value) {
+              Navigator.pushReplacementNamed(context, LoginScreen.id);
+            });
+          },
+        ),
         title: Text(
           'Orders',
           style: TextStyle(

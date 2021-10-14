@@ -8,6 +8,7 @@ import 'package:myecommerce/Providers/CouponProvider.dart';
 import 'package:myecommerce/Providers/LocationProvider.dart';
 import 'package:myecommerce/Providers/OrderProvider.dart';
 import 'package:myecommerce/Providers/StoreProvider.dart';
+import 'package:myecommerce/Screens/BlogDetails.dart';
 import 'package:myecommerce/Screens/CartScreen.dart';
 import 'package:myecommerce/Screens/HomeScreen.dart';
 import 'package:myecommerce/Screens/LandingScreen.dart';
@@ -81,6 +82,7 @@ class MyEcommerce extends StatelessWidget {
         ProfileUpdateScreen.id: (context) => ProfileUpdateScreen(),
         MyOrderScreen.id: (context) => MyOrderScreen(),
         BlogScreen.id: (context) => BlogScreen(),
+        BlogDetails.id: (context) => BlogDetails(),
         VendorHomeScreen.id: (context) => VendorHomeScreen(),
         ProductScreen.id: (context) => ProductScreen(),
         ProductDetailsScreen.id: (context) => ProductDetailsScreen(),

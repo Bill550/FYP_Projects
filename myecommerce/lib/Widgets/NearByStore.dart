@@ -47,7 +47,7 @@ class _NearByStoreState extends State<NearByStore> {
     return Container(
       color: Colors.white,
       child: StreamBuilder<QuerySnapshot>(
-        stream: _storeServices.getNearByStore(), //TODO: Will change it soon
+        stream: _storeServices.getNearByStore(),
         builder: (BuildContext context,
             AsyncSnapshot<QuerySnapshot<dynamic>> snapshot) {
           if (!snapshot.hasData)

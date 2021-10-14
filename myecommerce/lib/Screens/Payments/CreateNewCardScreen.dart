@@ -55,7 +55,7 @@ class CreateNewCardScreenState extends State<CreateNewCardScreen> {
                     CreditCardForm(
                       formKey: formKey,
                       obscureCvv: true,
-                      obscureNumber: true,
+                      // obscureNumber: true,
                       cardNumber: cardNumber,
                       cvvCode: cvvCode,
                       cardHolderName: cardHolderName,

@@ -83,9 +83,6 @@ class _RegisterFormState extends State<RegisterForm> {
                       if (value == null || value.isEmpty) {
                         return 'can\'t be empty';
                       }
-                      if (value.contains(' ')) {
-                        return 'Should not contain space';
-                      }
                       if (value.length < 3) {
                         return 'Should be at least 3 characaters';
                       }

@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:myecommerce/Providers/StoreProvider.dart';
-// import 'package:myecommerce/Widgets/Products/ProductFilterWidget.dart';
 import 'package:myecommerce/Widgets/Products/ProductListWidget.dart';
 import 'package:provider/provider.dart';
 

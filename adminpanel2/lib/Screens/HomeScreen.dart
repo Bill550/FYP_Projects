@@ -21,19 +21,25 @@ class HomeScreen extends StatelessWidget {
       ),
       sideBar: _sideBarWidget.sideBarMenus(context, HomeScreen.id),
       body: SingleChildScrollView(
-        child: Container(
-          alignment: Alignment.topLeft,
-          padding: const EdgeInsets.all(10),
-          child: Center(
-            child: Text(
-              'Dashboard',
-              style: TextStyle(
-                fontWeight: FontWeight.w700,
-                fontSize: 36,
-                color: greenColor,
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            Container(
+              alignment: Alignment.topLeft,
+              padding: const EdgeInsets.all(10),
+              child: Center(
+                child: Text(
+                  'Dashboard',
+                  style: TextStyle(
+                    fontWeight: FontWeight.w700,
+                    fontSize: 36,
+                    color: greenColor,
+                  ),
+                ),
               ),
             ),
-          ),
+          ],
         ),
       ),
     );

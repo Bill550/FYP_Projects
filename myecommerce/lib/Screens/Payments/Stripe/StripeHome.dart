@@ -36,7 +36,7 @@ class StripeHomeState extends State<StripeHome> {
     await EasyLoading.show(status: 'Please wait...');
     var response = await StripeService.payWithNewCard(
       amount: '${amount}00',
-      currency: 'PKR',
+      currency: 'USD',
       //TODO: Need to change PRK INTO USD OR AUD
     );
     if (response.success == true) {
@@ -71,7 +71,7 @@ class StripeHomeState extends State<StripeHome> {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text('Home'),
+        iconTheme: IconThemeData(color: Colors.white),
       ),
       body: Column(
         children: [
@@ -85,7 +85,8 @@ class StripeHomeState extends State<StripeHome> {
               child: Padding(
                 padding: const EdgeInsets.only(left: 40, right: 40, top: 10),
                 child: Image.network(
-                  'https://easypaisa.com.pk/wp-content/uploads/2019/10/Header-Icon.png',
+                  // 'https://easypaisa.com.pk/wp-content/uploads/2019/10/Header-Icon.png',
+                  'https://pcgame.pk/media/2020/02/Buy-JazzCash-in-Pakistan.png',
                   fit: BoxFit.fitWidth,
                 ),
               ),

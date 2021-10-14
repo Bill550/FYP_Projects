@@ -22,12 +22,12 @@ class DrawerServices {
     if (title == 'Orders') {
       return OrdersScreen();
     }
-    if (title == 'Reports') {
-      return MainScreen();
-    }
-    if (title == 'Setting') {
-      return MainScreen();
-    }
+    // if (title == 'Reports') {
+    //   return MainScreen();
+    // }
+    // if (title == 'Setting') {
+    //   return MainScreen();
+    // }
     return MainScreen();
   }
 }
